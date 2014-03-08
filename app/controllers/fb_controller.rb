@@ -9,6 +9,10 @@ class FbController < ApplicationController
 		redirect_to new_user_path
   end
 	
+	def about
+		redirect_to about_path
+	end
+	
 	private
 
   def allow_iframe
