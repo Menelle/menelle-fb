@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+#ig {
+	.profile {
+		background-color:#f2f2f2;
+		padding:16px;
+		margin-bottom:32px;
+		ul {list-style-type:none;margin:0;padding:0;li {display:inline;}}
+		.profile_picture, .name, .bio {float:left;height:64px;}
+		.profile_picture {
+			float:left;
+			img {
+				width:64px;
+				height:64px;
+				border-radius: 50%;
+				-moz-border-radius: 50%;  
+				-webkit-border-radius: 50%;
+			}
+			.link {
+				position:absolute;
+				width:64px;
+				height:64px;
+				top:0;
+				left:16px;
+				border-radius: 50%;
+				-moz-border-radius: 50%;  
+				-webkit-border-radius: 50%;
+				background-color:#000;
+				color:#fff;
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				text-align:center;
+				padding-top:21px;
+				visibility:hidden;
+			}
+			span {position:absolute;width:64px;height:64px;top:0;left:16px;z-index:1;}
+		}
+		.profile_picture:hover {
+			img {visibility:hidden;}
+			.link {visibility:visible;}
+		}
+		.name {padding-left:16px;padding-top:0px;}
+		.bio { padding-left:64px;width:400px;}
+		.sb {
+		width:64px;
+		height:64px;
+		border-radius: 50%;
+		-moz-border-radius: 50%;  
+		-webkit-border-radius: 50%;
+		background-color:#f2f2f2;
+		border: 2px #000 solid;
+		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		text-align:center;
+		img {visibility:hidden;}
+		a {
+			font-size: 16px;
+			text-transform:uppercase;
+			color: #000;
+			text-decoration:none;
+		}}
+		
+		.stats {
+			padding-left:80px;
+			.media, .followed_by, .follows {float:left;height:18px;width:44px;}
+			.img-media, .img-followed_by, .img-follows {float:left;margin-right:2px;}
+			.media {.img-media {width:16px;height:16px;background-image:asset-url("icons/media.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+			.media:hover {.img-media {background-image:asset-url("icons/media-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+			
+			.followed_by {.img-followed_by {width:16px;height:16px;background-image:asset-url("icons/followed_by.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+			.followed_by:hover {.img-followed_by {background-image:asset-url("icons/followed_by-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+			
+			.follows {.img-follows {width:16px;height:16px;background-image:asset-url("icons/follows.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+			.follows:hover {.img-follows {background-image:asset-url("icons/follows-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+		}
+	}
+	.item {
+		padding-bottom:32px;
+		.likes {
+			width:50px;
+			height:50px;
+			background-image:asset-url("icons/like.png", image);
+			background-repeat:no-repeat;text-align:center;padding-top:16px;
+		}
+		.likes:hover { 
+				background-image:asset-url("icons/like-black.png", image);
+				a {color:#fff;text-decoration:none;}
+		}
+	}
+	p, a {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: x-small;color:#000;}
+}
