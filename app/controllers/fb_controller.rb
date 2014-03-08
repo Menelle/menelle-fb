@@ -4,5 +4,6 @@ class FbController < ApplicationController
   end
 
   def contact
+		redirect_to new_user_path
   end
 end
