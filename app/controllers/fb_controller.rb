@@ -10,7 +10,7 @@ class FbController < ApplicationController
   end
 	
 	def about
-		redirect_to about_path
+		redirect_to about_index_path
 	end
 	
 	private
