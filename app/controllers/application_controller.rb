@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   require 'rubygems'
-  require 'sinatra'
   require 'instagram'
 
   Instagram.configure do |config|
