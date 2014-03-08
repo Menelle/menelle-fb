@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+	before_action :set_select, only: [:new, :create, :edit, :update]
+	before_action :set_admin_access, only: [:index, :edit, :update, :destroy]
+	after_filter :allow_iframe
 
   # GET /users
   # GET /users.json
@@ -63,10 +66,23 @@ class UsersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_user
+	  def allow_iframe
+	    response.headers.except! 'X-Frame-Options'
+	  end 
+		def set_select
+			@occupations = ["Agency", "Assistant", "Female Model", "Film Director", "Hair Stylist", "Makeup Artist",
+											"Male Model", "Photographer", "Set Designer", "Shooting Place", "Stylist", "Wardrobe"]
+			@requests = ["Campaign", "Catalog", "Catwalk", "Collaboration", "Edito",
+								 "Personal Work", "Test Shoot", "Time For Print"]
+		end
+		def set_user
       @user = User.find(params[:id])
     end
-
+		def set_admin_access
+			unless current_crafter.email == 'thomas@menelle.com'
+				redirect_to new_user_path
+			end
+		end
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:firstname, :lastname, :email, :url, :occupation, :offer, :details)
