@@ -1,5 +1,6 @@
 MenelleFb::Application.routes.draw do
   resources :users
+	get "about/index"
   get "welcome/index"
 	post "/ig/" => "fb#ig"
 	post "/contact/" => "fb#contact"
