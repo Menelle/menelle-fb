@@ -95,4 +95,11 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		}
 		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 }
+
+#about {
+	.timeline {
+		list-style:none;
+		border-left: 4px solid #000;
+	}
+}
 @import "bootstrap";
