@@ -10,7 +10,7 @@
  *
  *= require_self
  */
-.container-fluid {padding: 0px 15px;padding-right:0px!important;}
+.container-fluid {padding: 0px 15px;}
 #ig {
 	margin-left:-15px;
 	.profile {
@@ -54,7 +54,7 @@
 		}
 		.id {
 			padding-left:16px;
-			.fullname {a {font-style:normal;font-weight:700;font-size:x-small;letter-spacing:2px}}
+			.fullname {a {font-weight:700;letter-spacing:2px}}
 		}
 		.bio { padding-left:64px;width:400px;}
 		.stats {
