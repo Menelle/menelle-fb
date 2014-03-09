@@ -10,7 +10,7 @@
  *
  *= require_self
  */
-.container-fluid {padding: 0px 0 0 15px;width:100%;}
+.container-fluid {padding: 0px 15px;}
 #ig {
 	margin-left:-15px;
 	.profile {
@@ -78,6 +78,7 @@
 			height:50px;
 			background-image:asset-url("icons/like.png", image);
 			background-repeat:no-repeat;text-align:center;padding-top:16px;
+			a {font-style:normal;font-weight:700;font-size:small;}
 		}
 		.likes:hover { 
 				background-image:asset-url("icons/like-black.png", image);
