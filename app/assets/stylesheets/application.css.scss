@@ -10,7 +10,9 @@
  *
  *= require_self
  */
+.container-fluid {padding: 0px 15px;}
 #ig {
+	margin-left:-15px;
 	.profile {
 		background-color:#f2f2f2;
 		padding:16px;

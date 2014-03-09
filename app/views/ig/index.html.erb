@@ -1,6 +1,7 @@
-<section id="ig">
+<section id="ig" class="container-fluid">
+
 	<div class="profile">
-		
+
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 
@@ -22,12 +23,11 @@
 					<p><%= @user.bio %></p>
 				</div><!-- .bio -->
 
-			</div>
+			</div><!-- .col -->
 		</div><!-- .row -->
-		
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
-				
+
 				<div class="stats">
 					<%= content_tag(:div, class: "media" ) do %>
 						<%= content_tag(:div, nil, class: "img-media" ) %> <%= content_tag(:p, @user.counts.media) %>
@@ -38,31 +38,52 @@
 					<%= content_tag(:div, class: "follows" ) do %>
 						<%= content_tag(:div, nil, class: "img-follows" ) %> <%= content_tag(:p, @user.counts.follows) %>
 					<% end %>
-				</div><!-- .stats -->
-				
-			</div>
-		</div><!-- .row -->
+					</div><!-- .stats -->
 
+			</div><!-- .col -->
+		</div><!-- .row -->
+	
 	</div><!-- .profile -->
 
-	<% @feed.each do |feed| %>
-		<div class="item">
-			<div class="row">
-				<div class="vignette col-md-7 col-sm-7 col-xs-7">
-					<%= image_tag feed.images.standard_resolution.url, class: "img-responsive" %>
-			    </div><!-- .vignette -->
-				<div class="col-md-5 col-sm-5 col-xs-5">
-					<div class="caption">
-						<p><%= feed.caption.text %></p>
-					</div><!-- .caption -->
-					<div class ="likes">
-						<%= link_to feed.likes[:count], feed.link, target: "_blank" %>
-					</div>
-				</div>
-			</div><!-- .row -->
-		</div><!-- .item -->_
-	<% end %>
+	<div class="items">
+		<% @feed.each do |feed| %>
+			<div class="item">
+
+				<div class="row">
+					<div class="col-md-7 col-sm-7 col-xs-7">
+
+						<div class="vignette">
+							<%= image_tag feed.images.standard_resolution.url, class: "img-responsive" %>
+				    	</div><!-- .vignette -->
+
+					</div><!-- .col -->
+					<div class="col-md-5 col-sm-5 col-xs-5">
+
+						<div class="caption">
+							<p><%= feed.caption.text %></p>
+						</div><!-- .caption -->
+
+						<div class ="likes">
+							<%= link_to feed.likes[:count], feed.link, target: "_blank" %>
+						</div><!-- .likes -->
+
+					</div><!-- .col -->
+				</div><!-- .row -->
+
+			</div><!-- .item -->_
+		<% end %>
+	</div><!-- .items -->
+
 	<div class="credits">
-		<p>Copyright &copy; 2014 <%= link_to 'Menelle Paris', 'http://www.menelle.com', target: "_blank" %>. All rights reserved.</p>
+		
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<p>Copyright &copy; 2014 <%= link_to 'Menelle Paris', 'http://www.menelle.com', target: "_blank" %>. All rights reserved.</p>
+
+			</div><!-- .col -->
+		</div><!-- .row -->
+	
 	</div><!-- .credits -->
+
 </section><!-- #ig -->
