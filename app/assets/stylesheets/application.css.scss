@@ -41,7 +41,7 @@
 				color:#fff;
 				font-family: "proxima-nova",sans-serif;
 				font-style: normal;
-				font-weight: 700;
+				font-weight: 400;
 				text-align:center;
 				padding-top:23px;
 				visibility:hidden;
@@ -78,7 +78,7 @@
 			height:50px;
 			background-image:asset-url("icons/like.png", image);
 			background-repeat:no-repeat;text-align:center;padding-top:14px;
-			a {font-style:normal;font-weight:700;font-size:small;}
+			a {font-style:normal;font-weight:400;font-size:small;}
 		}
 		.likes:hover { 
 				background-image:asset-url("icons/like-black.png", image);
