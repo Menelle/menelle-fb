@@ -18,7 +18,7 @@
 		padding:16px;
 		margin-bottom:32px;
 		ul {list-style-type:none;margin:0;padding:0;li {display:inline;}}
-		.profile_picture, .name, .bio {float:left;height:64px;}
+		.profile_picture, .name, .fullname, .username, .website, .bio {float:left;height:64px;}
 		.profile_picture {
 			float:left;
 			img {
@@ -41,7 +41,7 @@
 				color:#fff;
 				font-family: "proxima-nova",sans-serif;
 				font-style: normal;
-				font-weight: 400;
+				font-weight: 700;
 				text-align:center;
 				padding-top:21px;
 				visibility:hidden;
