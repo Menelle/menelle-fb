@@ -9,8 +9,8 @@
 			From <% if @user.firstname? %><%= @user.firstname %><% end %> <% if @user.lastname? %><%= @user.lastname %><% end %>.<br>
 			<% if @user.email? %><%= @user.email %><% end %><br>
 			<% if @user.url? %><%= @user.url %><% end %><br><br>
-			Request: <% if @user.request? %><%= @user.request %><% end %><br><br>
-			Message:<br><% if @user.message? %><%= @user.message %><% end %><br>
+			Offer: <% if @user.offer? %><%= @user.offer %><% end %><br><br>
+			Details:<br><% if @user.details? %><%= @user.details %><% end %><br>
 		</p>
 	</body>
 </html>
