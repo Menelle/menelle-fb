@@ -39,7 +39,9 @@
 				-webkit-border-radius: 50%;
 				background-color:#000;
 				color:#fff;
-				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				font-family: "proxima-nova",sans-serif;
+				font-style: normal;
+				font-weight: 400;
 				text-align:center;
 				padding-top:21px;
 				visibility:hidden;
@@ -52,24 +54,6 @@
 		}
 		.name {padding-left:16px;padding-top:0px;}
 		.bio { padding-left:64px;width:400px;}
-		.sb {
-		width:64px;
-		height:64px;
-		border-radius: 50%;
-		-moz-border-radius: 50%;  
-		-webkit-border-radius: 50%;
-		background-color:#f2f2f2;
-		border: 2px #000 solid;
-		font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		text-align:center;
-		img {visibility:hidden;}
-		a {
-			font-size: 16px;
-			text-transform:uppercase;
-			color: #000;
-			text-decoration:none;
-		}}
-		
 		.stats {
 			padding-left:80px;
 			.media, .followed_by, .follows {float:left;height:18px;width:44px;}
@@ -97,6 +81,6 @@
 				a {color:#fff;text-decoration:none;}
 		}
 	}
-	p, a {font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-size: x-small;color:#000;}
+	p, a {font-family: "proxima-nova",sans-serif;font-style: normal;font-weight: 400;font-size: x-small;color:#000;}
 }
 @import "bootstrap";
