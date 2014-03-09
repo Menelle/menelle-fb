@@ -77,4 +77,16 @@ MenelleFb::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+	
+	# Mandrill
+	config.action_mailer.default_url_options = { :host => 'vuhilight.heroku.com' }
+	config.action_mailer.delivery_method = :smtp
+	config.action_mailer.smtp_settings = {
+	    :port =>           '587',
+	    :address =>        'smtp.mandrillapp.com',
+	    :user_name =>      ENV['MANDRILL_USERNAME'],
+	    :password =>       ENV['MANDRILL_APIKEY'],
+	    :domain =>         'heroku.com',
+	    :authentication => :plain
+	}
 end

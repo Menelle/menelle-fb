@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+	</head>
+	<body>
+		<h1>Merci <% if @user.firstname? %><%= @user.firstname %><% end %> !</h1>
+		<p>
+			J'ai bien reçu votre demande d'informations.<br>
+			Je ferai mon maximum pour y répondre dans les plus brefs délais.<br><br>
+
+			Dans cette attente, n'hésitez pas à me rejoindre<br>
+			sur Instagram @thomasmenelle<br>
+			sur Twitter @menelleparis<br>
+			sur Tumblr <a href="http://menelleparis.tumblr.com">http://menelleparis.tumblr.com</a><br><br>
+
+			Cordialement,<br><br>
+			Thomas Menelle<br>
+			Photographe &agrave; <%= link_to 'Menelle Paris', 'http://www.menelle.com' %><br>
+			<%= link_to 'http://www.menelle.com', 'http://www.menelle.com' %>
+		</p><br><br><br><br>
+
+		<h1>Thank you <% if @user.firstname? %><%= @user.firstname %><% end %>!</h1>
+		<p>
+			I just received your informations request.<br>
+			I will do my best to answer to it asap.<br><br>
+
+			During this wait, do not hesitate to join me<br>
+			on Instagram @thomasmenelle<br>
+			on Twitter @menelleparis<br>
+			on Tumblr <a href="http://menelleparis.tumblr.com">http://menelleparis.tumblr.com</a><br><br>
+
+			Kind Regards,<br><br>
+			Thomas Menelle<br>
+			Photographer at <%= link_to 'Menelle Paris', 'http://www.menelle.com' %><br>
+			<%= link_to 'http://www.menelle.com', 'http://www.menelle.com' %>
+		</p>
+	</body>
+</html>

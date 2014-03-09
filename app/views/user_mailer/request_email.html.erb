@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+	</head>
+	<body>
+		<h1>New request from Facebook</h1>
+		<p>
+			From <% if @user.firstname? %><%= @user.firstname %><% end %> <% if @user.lastname? %><%= @user.lastname %><% end %>.<br>
+			<% if @user.email? %><%= @user.email %><% end %><br>
+			<% if @user.url? %><%= @user.url %><% end %><br><br>
+			Request: <% if @user.request? %><%= @user.request %><% end %><br><br>
+			Message:<br><% if @user.message? %><%= @user.message %><% end %><br>
+		</p>
+	</body>
+</html>
