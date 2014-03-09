@@ -52,7 +52,10 @@
 			img {visibility:hidden;}
 			.link {visibility:visible;}
 		}
-		.name {padding-left:16px;padding-top:0px;letter-spacing:2px}
+		.id {
+			padding-left:16px;padding-top:0px;
+			.fullname {font-style:normal;font-weight:700;font-size:small;letter-spacing:2px}
+		}
 		.bio { padding-left:64px;width:400px;}
 		.stats {
 			padding-left:80px;
@@ -81,6 +84,6 @@
 				a {color:#fff;text-decoration:none;}
 		}
 	}
-	p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:500;font-size:x-small;color:#000;}
+	p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;font-size:x-small;color:#000;}
 }
 @import "bootstrap";

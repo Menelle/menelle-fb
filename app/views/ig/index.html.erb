@@ -13,11 +13,17 @@
 					<%= content_tag(:div, "GO", class: "link") %>
 				</div><!-- .profile_picture -->
 
-				<div class="name">
-					<%= link_to content_tag(:b, @user.full_name), "http://www.instagram.com/thomasmenelle", target: "_blank" %><br>
-					<%= link_to "@"+@user.username, "http://www.instagram.com/thomasmenelle", target: "_blank" %><br>
-					<%= link_to @user.website, @user.website, target: "_blank" %>
-				</div><!-- .name -->
+				<div class="id">
+					<div class="fullname">
+						<%= link_to @user.full_name, "http://www.instagram.com/thomasmenelle", target: "_blank" %>
+					</div><!-- .fullname -->
+					<div class="username">
+						<%= link_to "@"+@user.username, "http://www.instagram.com/thomasmenelle", target: "_blank" %>
+					</div><!-- .username -->
+					<div class="website">
+						<%= link_to @user.website, @user.website, target: "_blank" %>
+					</div><!-- .website -->
+				</div><!-- .id -->
 
 				<div class="bio">
 					<p><%= @user.bio %></p>
