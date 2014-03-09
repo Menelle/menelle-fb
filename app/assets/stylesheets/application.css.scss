@@ -32,21 +32,14 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 				-webkit-border-radius: 50%;
 			}
 			.link {
+				background-image:asset-url("menelle-ig.png", image);
+				background-size:64px 64px;
+				background-repeat:no-repeat;
 				position:absolute;
 				width:64px;
 				height:64px;
 				top:0;
 				left:16px;
-				border-radius: 50%;
-				-moz-border-radius: 50%;  
-				-webkit-border-radius: 50%;
-				background-color:#000;
-				color:#fff;
-				font-family: "proxima-nova",sans-serif;
-				font-style: normal;
-				font-weight: 400;
-				text-align:center;
-				padding-top:23px;
 				visibility:hidden;
 			}
 			span {position:absolute;width:64px;height:64px;top:0;left:16px;z-index:1;}
@@ -62,8 +55,18 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.bio { padding-left:64px;padding-top:4px;width:400px;}
 		.stats {
 			padding-left:80px;
+			.digit-media, .digit-followed_by, .digit-follows, .digit-likes {
+				height: 13px;
+				background-color:#000;
+				color:#fff;font-size:xx-small;
+				padding: 0 3px;
+				border-radius: 2px;
+				-moz-border-radius: 2px;  
+				-webkit-border-radius: 2px;
+				margin-left:-3px;
+			}
 			.media, .followed_by, .follows {float:left;height:18px;width:44px;}
-			.img-media, .img-followed_by, .img-follows {float:left;margin-right:2px;}
+			.img-media, .digit-media, .img-followed_by, .digit-followed_by, .img-follows, .digit-follows {float:left;}
 			.media {.img-media {width:16px;height:16px;background-image:asset-url("icons/media.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 			.media:hover {.img-media {background-image:asset-url("icons/media-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 			
@@ -75,18 +78,21 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		}
 	}
 	.item {
+		.likes, .img-likes, .digit-likes {float:left;}
 		padding-bottom:32px;
 		.likes {
-			width:50px;
-			height:50px;
-			background-image:asset-url("icons/like.png", image);
-			background-repeat:no-repeat;text-align:center;padding-top:14px;
-			a {font-style:normal;font-weight:400;font-size:small;}
+			.digit-likes {
+				height: 13px;
+				background-color:#000;
+				color:#fff;font-size:xx-small;
+				padding: 0 3px;
+				border-radius: 2px;
+				-moz-border-radius: 2px;  
+				-webkit-border-radius: 2px;
+				margin-left:-3px;
+			}
+			.img-likes {width:16px;height:16px;background-image:asset-url("icons/like.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 		}
-		.likes:hover { 
-				background-image:asset-url("icons/like-black.png", image);
-				a {color:#fff;text-decoration:none;}
-		}
-	}
+		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 }
 @import "bootstrap";

@@ -36,13 +36,13 @@
 
 				<div class="stats">
 					<%= content_tag(:div, class: "media" ) do %>
-						<%= content_tag(:div, nil, class: "img-media" ) %> <%= content_tag(:p, @user.counts.media) %>
+						<%= content_tag(:div, nil, class: "img-media" ) %> <%= content_tag(:div, @user.counts.media, class: "digit-media") %>
 					<% end %>
 					<%= content_tag(:div, class: "followed_by" ) do %>
-						<%= content_tag(:div, nil, class: "img-followed_by" ) %><%= content_tag(:p, @user.counts.followed_by) %>
+						<%= content_tag(:div, nil, class: "img-followed_by" ) %><%= content_tag(:div, @user.counts.followed_by, class: "digit-followed_by") %>
 					<% end %>
 					<%= content_tag(:div, class: "follows" ) do %>
-						<%= content_tag(:div, nil, class: "img-follows" ) %> <%= content_tag(:p, @user.counts.follows) %>
+						<%= content_tag(:div, nil, class: "img-follows" ) %> <%= content_tag(:div, @user.counts.follows, class: "digit-follows") %>
 					<% end %>
 					</div><!-- .stats -->
 
@@ -70,7 +70,7 @@
 						</div><!-- .caption -->
 
 						<div class ="likes">
-							<%= link_to feed.likes[:count], feed.link, target: "_blank" %>
+							<%= content_tag(:div, nil, class: "img-likes" ) %> <%= content_tag(:div, feed.likes[:count], class: "digit-likes") %>	
 						</div><!-- .likes -->
 
 					</div><!-- .col -->
