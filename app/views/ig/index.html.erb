@@ -70,7 +70,10 @@
 						</div><!-- .caption -->
 
 						<div class ="likes">
-							<%= content_tag(:div, nil, class: "img-likes" ) %> <%= content_tag(:div, feed.likes[:count], class: "digit-likes") %>	
+							<%= content_tag(:div, nil, class: "img-likes" ) %> <%= content_tag(:div, feed.likes[:count], class: "digit-likes") %>
+							<%= link_to feed.link, target: "_blank" do %>
+								<%= content_tag(:span, nil) %>
+							<% end %>
 						</div><!-- .likes -->
 
 					</div><!-- .col -->
