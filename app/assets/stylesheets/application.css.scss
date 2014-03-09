@@ -43,7 +43,7 @@
 				font-style: normal;
 				font-weight: 700;
 				text-align:center;
-				padding-top:21px;
+				padding-top:23px;
 				visibility:hidden;
 			}
 			span {position:absolute;width:64px;height:64px;top:0;left:16px;z-index:1;}
@@ -54,7 +54,7 @@
 		}
 		.id {
 			padding-left:16px;
-			.fullname {font-style:normal;font-weight:700;font-size:small;letter-spacing:2px}
+			.fullname {a {font-style:normal;font-weight:700;font-size:small;letter-spacing:2px}}
 		}
 		.bio { padding-left:64px;width:400px;}
 		.stats {
