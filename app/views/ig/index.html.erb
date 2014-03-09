@@ -59,8 +59,10 @@
 					<div class="col-md-7 col-sm-7 col-xs-7">
 
 						<div class="vignette">
-							<%= image_tag feed.images.standard_resolution.url, class: "img-responsive" %>
-				    	</div><!-- .vignette -->
+							<%= link_to feed.link, target: "_blank" do %>
+								<%= image_tag feed.images.standard_resolution.url, class: "img-responsive" %>
+							<% end %>
+						</div><!-- .vignette -->
 
 					</div><!-- .col -->
 					<div class="col-md-5 col-sm-5 col-xs-5">
@@ -70,9 +72,8 @@
 						</div><!-- .caption -->
 
 						<div class ="likes">
-							<%= content_tag(:div, nil, class: "img-likes" ) %> <%= content_tag(:div, feed.likes[:count], class: "digit-likes") %>
 							<%= link_to feed.link, target: "_blank" do %>
-								<%= content_tag(:span, nil) %>
+								<%= content_tag(:div, nil, class: "img-likes" ) %> <%= content_tag(:div, feed.likes[:count], class: "digit-likes") %>
 							<% end %>
 						</div><!-- .likes -->
 
