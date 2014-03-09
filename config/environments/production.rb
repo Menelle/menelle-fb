@@ -79,7 +79,7 @@ MenelleFb::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 	
 	# Mandrill
-	config.action_mailer.default_url_options = { :host => 'vuhilight.heroku.com' }
+	config.action_mailer.default_url_options = { :host => 'menelle-fb.heroku.com' }
 	config.action_mailer.delivery_method = :smtp
 	config.action_mailer.smtp_settings = {
 	    :port =>           '587',
