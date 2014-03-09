@@ -18,7 +18,7 @@
 		padding:16px;
 		margin-bottom:32px;
 		ul {list-style-type:none;margin:0;padding:0;li {display:inline;}}
-		.profile_picture, .name, .fullname, .username, .website, .bio {float:left;height:64px;}
+		.profile_picture, .id, .bio {float:left;height:64px;}
 		.profile_picture {
 			float:left;
 			img {
@@ -53,7 +53,7 @@
 			.link {visibility:visible;}
 		}
 		.id {
-			padding-left:16px;padding-top:0px;
+			padding-left:16px;
 			.fullname {font-style:normal;font-weight:700;font-size:small;letter-spacing:2px}
 		}
 		.bio { padding-left:64px;width:400px;}
