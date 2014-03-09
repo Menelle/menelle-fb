@@ -32,7 +32,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
 				UserMailer.welcome_email(@user).deliver
-
+				UserMailer.request_email(@user).deliver
         format.html { redirect_to @user, notice: 'Message was successfully sent.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
