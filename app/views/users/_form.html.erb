@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :firstname %><br>
-    <%= f.text_field :firstname %>
+    <%= f.text_field :firstname, autofocus: true %>
   </div>
   <div class="field">
     <%= f.label :lastname %><br>
@@ -21,25 +21,25 @@
   </div>
   <div class="field">
     <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%= f.email_field :email %>
   </div>
   <div class="field">
     <%= f.label :url %><br>
-    <%= f.text_field :url %>
+    <%= f.url_field :url %>
   </div>
   <div class="field">
     <%= f.label :occupation %><br>
-    <%= f.text_field :occupation %>
+    <%=	f.select :occupation, @occupations %>
   </div>
   <div class="field">
     <%= f.label :offer %><br>
-    <%= f.text_field :offer %>
+    <%=	f.select :offer, @occupations %>
   </div>
   <div class="field">
     <%= f.label :details %><br>
-    <%= f.text_field :details %>
+    <%= f.text_area :details %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Send" %>
   </div>
 <% end %>
