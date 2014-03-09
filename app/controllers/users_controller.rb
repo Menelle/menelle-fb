@@ -74,7 +74,7 @@ class UsersController < ApplicationController
 		def set_select
 			@occupations = ["Agency", "Assistant", "Female Model", "Film Director", "Hair Stylist", "Makeup Artist",
 											"Male Model", "Photographer", "Set Designer", "Shooting Place", "Stylist", "Wardrobe"]
-			@requests = ["Campaign", "Catalog", "Catwalk", "Collaboration", "Edito",
+			@offers = ["Campaign", "Catalog", "Catwalk", "Collaboration", "Edito",
 								 "Personal Work", "Test Shoot", "Time For Print"]
 		end
 		def set_user
