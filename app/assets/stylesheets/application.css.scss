@@ -105,11 +105,10 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 	}
 	.timeline {
 		ul {list-style:none;}
-		li {position:relative;margin: 40px 0;}
+		li {position:relative;margin: 40px 40px 40px 0;}
 		margin: 40px 0 40px 80px;
 		border-left: 4px solid #000;
 		.event {
-			padding-right:40px;
 			.radio {display: none;}
 			.radio:checked + .relative label {
 				margin-top:0px;
