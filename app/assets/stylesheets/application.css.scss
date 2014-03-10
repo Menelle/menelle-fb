@@ -96,7 +96,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 }
 #about {
-	.logo-about {margin-left:16px;margin-top:16px;width:64px;height:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
+	.logo-about {width:64px;height:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
 	.timeline {
 		ul {list-style:none;}
 		li {position:relative;margin: 40px 0;}
@@ -115,13 +115,13 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 				max-height: 80px;
 				border-color: black;
 				transform: translateX(16px);
-				transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+				transition: max-height 0.4s linear, border-color 0.4s linear, transform 0.2s linear;
 			}
 			.radio:checked ~ .content {
 				max-height: 100px;
 				color: #000;
 				a {color: #000!important;}
-				transition: color 0.3s linear 0.3s;
+				transition: color 0.2s linear 0.2s;
 			}
 			label {
 				position: absolute;
