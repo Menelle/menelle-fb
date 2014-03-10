@@ -1,48 +1,93 @@
 <section id="about" class="container-fluid">
 
-	<h1>About</h1>
-	<p>I am working on it. Thank you for your patience.</p>
-	_<p>I'm 28, live in Paris mon Amour, France, and take photos. I'm always looking for models/mua/collab. Feel free to contact me for further informations via the <%= link_to "Contact tab", new_user_path %>.<p>
-	<p>Thank you for visiting my Facebook page.</p>
-	<p>Kind Regards,<br>
-	Thomas Menelle</p>
-	<br>
-	_<p>J'ai 28 ans, vis à Paris mon Amour, France, et prends des photos. Je suis constamment à la recherche de modèle/maquilleur/collab. N'hésitez pas à me contacter pour plus d'informations via l'<%= link_to "onglet Contact", new_user_path %>.</p>
-	<p>Merci pour votre visite sur ma page Facebook.</p>
-	<p>Cordialement,<br>
-	Thomas Menelle</p>
-	
-	<div class="timeline">
-		<ul>
-			<li class="event">
-				<span class="flag">SIT LUX Paris</span>
-				<span class="time">2014</span>
-				<span class="desc">Four Hands Photographic House</span>
-			</li>
+	<div class="row">
+		<div class="col-md-4 col-sm-4 col-xs-4">
 
-			<li class="event">
-				<span class="flag">VUHI Light</span>
-				<span class="time">2013</span>
-				<span class="desc">App for elegant Casting Calls</span>
-			</li>
+			<div class ="resume">
+				<h1>About</h1>
+				<p>I am working on it. Thank you for your patience.</p>
+				_<p>I'm 28, live in Paris mon Amour, France, and take photos. I'm always looking for models/mua/collab. Feel free to contact me for further informations via the <%= link_to "Contact tab", new_user_path %>.<p>
+				<p>Thank you for visiting my Facebook page.</p>
+				<p>Kind Regards,<br>
+				Thomas Menelle</p>
+				<br>
+				_<p>J'ai 28 ans, vis à Paris mon Amour, France, et prends des photos. Je suis constamment à la recherche de modèle/maquilleur/collab. N'hésitez pas à me contacter pour plus d'informations via l'<%= link_to "onglet Contact", new_user_path %>.</p>
+				<p>Merci pour votre visite sur ma page Facebook.</p>
+				<p>Cordialement,<br>
+				Thomas Menelle</p>
+			</div><!-- .resume -->
 
-			<li class="event">
-				<span class="flag">Menelle Paris</span>
-				<span class="time">2011</span>
-				<span class="desc">Personal Studio</span>
-			</li>
+		</div><!-- .col -->
+		<div class="col-md-8 col-sm-8 col-xs-8">
+			<div class="timeline">
+				<ul>
+					<li class="event">
+						<input class="radio" id="event4" name="events" type="radio">
+						<div class="relative">
+							<label for="event4">SIT LUX Paris</label>
+							<span class="circle"></span>
+							<span class="time">2014</span>
+						</div><!-- .relative -->
+						<div class="content">
+							<span class="flag">Check <%= link_to "SIT LUX Paris", "http://www.sitlux.net", target: "_blank" %></span>
+							<span class="desc">our Four Hands Photographic House.</span>
+						</div><!-- .content -->
+					</li>
 
-			<li class="event">
-				<span class="flag">First Camera</span>
-				<span class="time">2005</span>
-				<span class="desc"></span>
-			</li>
+					<li class="event">
+						<input class="radio" id="event3" name="events" type="radio">
+						<div class="relative">
+							<label for="event3">VUHI Light</label>
+							<span class="circle"></span>
+							<span class="time">2013</span>
+						</div><!-- .relative -->
+						<div class="content">
+							<span class="flag">Check <%= link_to "VUHI Light", "http://li.vuhi.net", target: "_blank" %>,</span>
+							<span class="desc">an App to craft elegant Casting Calls Cards.</span>
+						</div><!-- .content -->
+					</li>
 
-			<li class="event">
-				<span class="flag">#</span>
-				<span class="time">1985</span>
-				<span class="desc">Hello World</span>
-			</li>
-		</ul>
-	</div><!-- .timeline -->
+					<li class="event">
+						<input class="radio" id="event2" name="events" type="radio">
+						<div class="relative">
+							<label for="event2">Menelle Paris</label>
+							<span class="circle"></span>
+							<span class="time">2011</span>
+						</div><!-- .relative -->
+						<div class="content">
+							<span class="flag">Check <%= link_to "Menelle Paris", "http://www.menelle.com", target: "_blank" %>,</span>
+							<span class="desc">my Personal Studio.</span>
+						</div><!-- .content -->
+					</li>
+
+					<li class="event">
+						<input class="radio" id="event1" name="events" type="radio">
+						<div class="relative">
+							<label for="event1">First Camera</label>
+							<span class="circle"></span>
+							<span class="time">2005</span>
+						</div><!-- .relative -->
+						<div class="content">
+							<span class="flag"></span>
+							<span class="desc">I joined the red Team.</span>
+						</div><!-- .content -->
+					</li>
+
+					<li class="event">
+						<input class="radio" id="event0" name="events" type="radio">
+						<div class="relative">
+							<label for="event0">Birth</label>
+							<span class="circle"></span>
+							<span class="time">1985</span>
+						</div><!-- .relative -->
+						<div class="content">
+							<span class="flag"></span>
+							<span class="desc">Hello World.</span>
+						</div><!-- .content -->
+					</li>
+				</ul>
+			</div><!-- .timeline -->
+		</div><!-- .col -->
+	</div><!-- .row -->
+
 </section><!-- #about -->
