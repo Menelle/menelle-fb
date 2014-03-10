@@ -104,7 +104,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.about-logo {width:64px;height:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
 	}
 	.timeline {
-		ul {list-style:none;padding-right:40px;}
+		ul {list-style:none;}
 		li {position:relative;margin: 40px 0;}
 		margin: 40px 0 40px 80px;
 		border-left: 4px solid #000;
@@ -167,6 +167,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 			}
 			.content {
 				position: relative;
+				margin-right:40px;
 				padding: 16px 16px 8px;
 				border: 2px solid transparent;
 				border-radius: 2px;
