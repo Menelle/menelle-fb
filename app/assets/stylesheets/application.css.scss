@@ -103,10 +103,9 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.about-logo {width:64px;height:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
 	}
 	.timeline {
-		ul {list-style:none;}
+		ul {list-style:none;padding-top:10px;}
 		li {position:relative;margin: 40px 0;}
 		margin: 40px 0 40px 80px;
-		padding-top:10px;
 		border-left: 4px solid black;
 		.event {
 			width:240px;
