@@ -96,6 +96,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 }
 #about {
+	a {text-decoration:underline;}
 	.about-header {
 		margin-bottom:32px;
 		padding:16px;
@@ -103,6 +104,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.about-logo {width:64px;height:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
 	}
 	.timeline {
+		padding-top:4px;
 		ul {list-style:none;}
 		li {position:relative;margin: 40px 0;}
 		margin: 40px 0 40px 80px;
