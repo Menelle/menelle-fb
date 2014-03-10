@@ -112,6 +112,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 			width:240px;
 			.radio {display: none;}
 			.radio:checked + .relative label {
+				margin-top:0px;
 				transform: translateX(16px);
 			}
 			.radio:checked + .relative .circle {
@@ -130,6 +131,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 				transition: color 0.4s linear 0.4s;
 			}
 			label {
+				margin-top:6px;
 				position: absolute;
 				height: 16px;
 				background-color:#000;
