@@ -15,7 +15,7 @@ h1 {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;fon
 p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;font-size:x-small;color:#000!important;}
 
 #ig {
-	margin:0 -15px;
+	margin-left:-15px;
 	.profile {
 		background-color:#f2f2f2;
 		padding:16px;
@@ -96,6 +96,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 }
 #about {
+	margin-left:-15px;
 	.about-header {
 		margin-bottom:32px;
 		padding:16px;
@@ -181,6 +182,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 	}
 }
 #contact {
+	margin-left:-15px;
 	.contact-header {
 		margin-bottom:32px;
 		padding:16px;
