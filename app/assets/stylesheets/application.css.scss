@@ -32,7 +32,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 				-webkit-border-radius: 50%;
 			}
 			.link {
-				background-image:asset-url("menelle-ig.png", image);
+				background-image:asset-url("menelle-ig-logo.png", image);
 				background-size:64px 64px;
 				background-repeat:no-repeat;
 				position:absolute;
@@ -96,6 +96,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 }
 #about {
+	.logo-about {margin-left:16px;margin-top:16px;width:64px;height:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
 	.timeline {
 		ul {list-style:none;}
 		li {position:relative;margin: 40px 0;}
