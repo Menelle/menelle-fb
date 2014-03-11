@@ -95,14 +95,14 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 }
 #about {
-	padding:16px;
 	margin-left:-15px;
 	.about-header {
+		padding:16px;
 		margin-bottom:32px;
 		background-color:#f2f2f2;
 		.about-logo, .quotes {float:left;height:64px;}
 		.about-logo {width:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
-		.quotes {padding-left:16px;}
+		.about-quote {padding-left:16px;}
 	}
 	.timeline {
 		padding-right:38px;
