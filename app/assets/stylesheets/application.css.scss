@@ -100,6 +100,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		margin-bottom:32px;
 		padding:16px;
 		background-color:#f2f2f2;
+		.about-logo, .quotes {float:left;}
 		.about-logo {width:64px;height:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
 		.quotes {padding-left:16px;}
 	}
