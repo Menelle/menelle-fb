@@ -24,10 +24,10 @@
     <%= f.url_field :url, placeholder: "http://" %>
   </div>
   <div class="field">
-    <%=	f.select :occupation, @occupations %>
+    You are: <%=	f.select :occupation, @occupations %>
   </div>
   <div class="field">
-    <%=	f.select :offer, @offers %>
+    You want: <%=	f.select :offer, @offers %>
   </div>
   <div class="field">
     <%= f.text_area :details, placeholder: "Type additional details for your search here (max. 40 characters)" %>
