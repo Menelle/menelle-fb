@@ -77,10 +77,10 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		}
 	}
 	.item {
-		.likes, .img-likes, .digit-likes, .comments, .img-comments, .digit-comments {float:left;}
 		padding-bottom:32px;
-		.likes, .comments {height:18px;width:44px;} 
-		.likes {
+		.likes, .img-likes, .digit-likes, .comments, .img-comments, .digit-comments {float:left;}
+		.likes, .comments {
+			height:18px;width:44px;
 			.digit-likes, .digit-comments {
 				height: 13px;
 				background-color:#000;
@@ -91,11 +91,12 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 				-webkit-border-radius: 2px;
 				margin-left:-3px;
 			}
-			.img-likes {width:16px;height:16px;background-image:asset-url("icons/like.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
-			.img-comments {width:16px;height:16px;background-image:asset-url("icons/comment.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 		}
+		.likes {.img-likes {width:16px;height:16px;background-image:asset-url("icons/like.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+		.comments {.img-comments {width:16px;height:16px;background-image:asset-url("icons/comment.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 		.comments:hover {.img-comments {background-image:asset-url("icons/comment-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+	}
 }
 #about {
 	margin-left:-15px;
