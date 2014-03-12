@@ -64,7 +64,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 				-webkit-border-radius: 2px;
 				margin-left:-3px;
 			}
-			.media, .followed_by, .follows {float:left;height:18px;width:44px;}
+			.media, .followed-by, .follows {float:left;height:18px;width:44px;}
 			.img-media, .digit-media, .img-followed-by, .digit-followed-by, .img-follows, .digit-follows {float:left;}
 			.media {.img-media {width:16px;height:16px;background-image:asset-url("icons/media.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 			.media:hover {.img-media {background-image:asset-url("icons/media-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
