@@ -77,6 +77,12 @@
 							<% end %><%= content_tag(:div, feed.comments[:count], class: "digit-likes") %>
 						</div><!-- .likes -->
 
+						<div class ="comments">
+							<%= link_to feed.link, target: "_blank" do %>
+								<%= content_tag(:div, nil, class: "img-comments" ) %> <%= content_tag(:div, feed.comments[:count], class: "digit-comments") %>
+							<% end %>
+						</div><!-- .comments -->
+
 					</div><!-- .col -->
 				</div><!-- .row -->
 

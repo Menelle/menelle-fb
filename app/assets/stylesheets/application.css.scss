@@ -54,7 +54,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.bio { padding-left:64px;padding-top:4px;width:400px;}
 		.stats {
 			padding-left:80px;
-			.digit-media, .digit-followed_by, .digit-follows, .digit-likes {
+			.digit-media, .digit-followed_by, .digit-follows {
 				height: 13px;
 				background-color:#000;
 				color:#fff;font-size:xx-small;
@@ -77,10 +77,11 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		}
 	}
 	.item {
-		.likes, .img-likes, .digit-likes {float:left;}
+		.likes, .img-likes, .digit-likes, .comments, .img-comments, .digit-comments {float:left;}
 		padding-bottom:32px;
+		.likes, .comments {height:18px;width:44px;} 
 		.likes {
-			.digit-likes {
+			.digit-likes, .digit-comments {
 				height: 13px;
 				background-color:#000;
 				color:#fff;font-size:xx-small;
@@ -91,8 +92,10 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 				margin-left:-3px;
 			}
 			.img-likes {width:16px;height:16px;background-image:asset-url("icons/like.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+			.img-comments {width:16px;height:16px;background-image:asset-url("icons/comment.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 		}
 		.likes:hover {.img-likes {background-image:asset-url("icons/like-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+		.comments:hover {.img-comments {background-image:asset-url("icons/comment-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 }
 #about {
 	margin-left:-15px;
