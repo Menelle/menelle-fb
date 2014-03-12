@@ -20,8 +20,8 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		padding:16px;
 		margin-bottom:32px;
 		ul {list-style-type:none;margin:0;padding:0;li {display:inline;}}
-		.profile_picture, .id, .bio {float:left;height:64px;}
-		.profile_picture {
+		.profile-picture, .id, .bio {float:left;height:64px;}
+		.profile-picture {
 			float:left;
 			img {
 				width:64px;
@@ -43,7 +43,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 			}
 			span {position:absolute;width:64px;height:64px;top:0;left:16px;z-index:1;}
 		}
-		.profile_picture:hover {
+		.profile-picture:hover {
 			img {visibility:hidden;}
 			.link {visibility:visible;}
 		}
@@ -54,7 +54,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.bio { padding-left:64px;padding-top:4px;width:400px;}
 		.stats {
 			padding-left:80px;
-			.digit-media, .digit-followed_by, .digit-follows {
+			.digit-media, .digit-followed-by, .digit-follows {
 				height: 13px;
 				background-color:#000;
 				color:#fff;font-size:xx-small;
@@ -65,12 +65,12 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 				margin-left:-3px;
 			}
 			.media, .followed_by, .follows {float:left;height:18px;width:44px;}
-			.img-media, .digit-media, .img-followed_by, .digit-followed_by, .img-follows, .digit-follows {float:left;}
+			.img-media, .digit-media, .img-followed-by, .digit-followed-by, .img-follows, .digit-follows {float:left;}
 			.media {.img-media {width:16px;height:16px;background-image:asset-url("icons/media.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 			.media:hover {.img-media {background-image:asset-url("icons/media-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 			
-			.followed_by {.img-followed_by {width:16px;height:16px;background-image:asset-url("icons/followed_by.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
-			.followed_by:hover {.img-followed_by {background-image:asset-url("icons/followed_by-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+			.followed-by {.img-followed-by {width:16px;height:16px;background-image:asset-url("icons/followed_by.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
+			.followed-by:hover {.img-followed-by {background-image:asset-url("icons/followed_by-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 			
 			.follows {.img-follows {width:16px;height:16px;background-image:asset-url("icons/follows.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
 			.follows:hover {.img-follows {background-image:asset-url("icons/follows-black.png", image);background-size:16px 16px;background-repeat:no-repeat;}}
@@ -107,6 +107,7 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		background-color:#f2f2f2;
 		.about-logo, .about-quote {float:left;height:64px;}
 		.about-logo {width:64px;background-image:asset-url("menelle-about-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
+		.about-logo:hover {background-image:asset-url("menelle-about-profile-picture.png", image);background-size:16px 16px;background-repeat:no-repeat;}
 		.about-quote {padding-left:16px;padding-top:5px;}
 	}
 	.timeline {

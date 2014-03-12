@@ -5,13 +5,13 @@
 		<div class="row">
 			<div class="col-md-12 col-sm-12 col-xs-12">
 
-				<div class="profile_picture">
+				<div class="profile-picture">
 					<%= image_tag @user.profile_picture %>
 					<%= link_to "http://www.instagram.com/thomasmenelle", target: "_blank" do %>
 						<%= content_tag(:span, nil) %>
 					<% end %>
 					<%= content_tag(:div, nil, class: "link") %>
-				</div><!-- .profile_picture -->
+				</div><!-- .profile-picture -->
 
 				<div class="id">
 					<div class="fullname">
@@ -39,7 +39,7 @@
 						<%= content_tag(:div, nil, class: "img-media" ) %> <%= content_tag(:div, @user.counts.media, class: "digit-media") %>
 					<% end %>
 					<%= content_tag(:div, class: "followed_by" ) do %>
-						<%= content_tag(:div, nil, class: "img-followed_by" ) %><%= content_tag(:div, @user.counts.followed_by, class: "digit-followed_by") %>
+						<%= content_tag(:div, nil, class: "img-followed-by" ) %><%= content_tag(:div, @user.counts.followed_by, class: "digit-followed-by") %>
 					<% end %>
 					<%= content_tag(:div, class: "follows" ) do %>
 						<%= content_tag(:div, nil, class: "img-follows" ) %> <%= content_tag(:div, @user.counts.follows, class: "digit-follows") %>
