@@ -75,7 +75,7 @@ class UsersController < ApplicationController
 			@occupations = ["Agency", "Assistant", "Female Model", "Film Director", "Hair Stylist", "Makeup Artist",
 											"Male Model", "Photographer", "Set Designer", "Shooting Place", "Stylist", "Wardrobe"]
 			@offers = ["Campaign", "Catalog", "Catwalk", "Collaboration", "Edito",
-								 "Personal Work", "Test Shoot", "Time For Print"]
+								 "Personal Work", "Test Shoot"]
 		end
 		def set_user
       @user = User.find(params[:id])
