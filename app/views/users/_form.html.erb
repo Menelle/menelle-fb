@@ -1,69 +1,56 @@
-<%= form_for(@user) do |f| %>
+<%= form_for(@user, html: { class: "form-horizontal", role: "form" }) do |f| %>
 	<% if @user.errors.any? %>
 
-		<div class="row">
-			<div class="col-md-12 col-sm-12 col-xs-12">
-
-				<div id="error_explanation">
-					<h2><%= pluralize(@user.errors.count, "error") %> prohibited this message from being sent:</h2>
-					<ul>
-						<% @user.errors.full_messages.each do |msg| %>
-							<li><%= msg %></li>
-						<% end %>
-					</ul>
-				</div>
-
-			</div><!-- .col -->
-		</div><!-- .row -->
+		<div id="error_explanation">
+			<h2><%= pluralize(@user.errors.count, "error") %> prohibited this message from being sent:</h2>
+			<ul>
+				<% @user.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
 	
 	<% end %>
 
-	<div class="row">
-		<div class="col-md-6 col-sm-6 col-xs-6">
+	<div class="l-align">
 
-			<div class="field">
-				<%= f.text_field :firstname, placeholder: "Firstname", autofocus: true %>
-			</div>
+		<div class="field">
+			<%= f.text_field :firstname, placeholder: "Firstname", autofocus: true %>
+		</div>
 
-			<div class="field">
-    			<%= f.text_field :lastname, placeholder: "Lastname" %>
-			</div>
+		<div class="field">
+	    	<%= f.text_field :lastname, placeholder: "Lastname" %>
+		</div>
+		
+		<div class="field">
+			<p>Your activity:</p><%=	f.select :occupation, @occupations %>
+		</div>
 
-			<div class="field">
-    			<%= f.email_field :email, placeholder: "Your Email" %>
-			</div>
+	</div><!-- .l-align -->
 
-			<div class="field">
-				<%= f.url_field :url, placeholder: "http://" %>
-			</div>
+	<div class="r-align">
 
-			<div class="field">
-				<p>Your activity: </p><%=	f.select :occupation, @occupations %>
-			</div>
+		<div class="field">
+	    	<%= f.email_field :email, placeholder: "Your Email" %>
+		</div>
 
-			<div class="field">
-				<p>You are looking for: </p><%=	f.select :offer, @offers %>
-			</div>
+		<div class="field">
+			<%= f.url_field :url, placeholder: "http://" %>
+		</div>
 
-		</div><!-- .col -->
-	</div><!-- .row -->
-	<div class="row">
-		<div class="col-md-6 col-sm-6 col-xs-6">
+		<div class="field">
+			<p>You are looking for:</p><%=	f.select :offer, @offers %>
+		</div>
 
-			<div class="field">
-				<%= f.text_area :details, size:"60x12", placeholder: "Type additional details for your search here (max. 400 characters)" %>
-			</div>
+	</div><!-- .r-align -->
 
-		</div><!-- .col -->
-	</div><!-- .row -->
-	<div class="row">
-		<div class="col-md-12 col-sm-12 col-xs-12">
+	<div class="field">
+		<%= f.text_area :details, size:"60x12", placeholder: "Type your message here. Do not forget to precise additional details for your search (max. 400 characters)" %>
+	</div>
 
-			<div class="actions">
-				<%= f.submit "Send" %>
-			</div>
 
-		</div><!-- .col -->
-	</div><!-- .row -->
+	<div class="actions">
+		<%= f.submit "Send" %>
+	</div>
 
 <% end %>
