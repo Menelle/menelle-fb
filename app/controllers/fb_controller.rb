@@ -2,7 +2,7 @@ class FbController < ApplicationController
 	skip_before_filter :verify_authenticity_token
 	after_filter :allow_iframe
   def ig
-		redirect_to ig_index_path
+		redirect_to ig_path
   end
 
   def contact
@@ -10,7 +10,7 @@ class FbController < ApplicationController
   end
 	
 	def about
-		redirect_to about_index_path
+		redirect_to about_path
 	end
 	
 	private
