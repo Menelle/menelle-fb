@@ -5,6 +5,7 @@ MenelleFb::Application.routes.draw do
 	post "/about/" => "fb#about"
 	post "/contact/" => "fb#contact"
 	post "/ig/" => "fb#ig"
+	post "/website/" => "fb#website"
 
 	get "about/index"
 	get "contact/index"
