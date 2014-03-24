@@ -1,12 +1,18 @@
 MenelleFb::Application.routes.draw do
   resources :users
   get "welcome/index"
-	post "/ig/" => "fb#ig"
-	post "/contact/" => "fb#contact"
+
 	post "/about/" => "fb#about"
-  get "ig/" => "fb#ig"
-	get "about/" => "fb#about"
-	get "/contact/" => "fb#contact"
+	post "/contact/" => "fb#contact"
+	post "/ig/" => "fb#ig"
+
+	get "about/index"
+	get "contact/index"
+	get "ig/index"
+
+	get "about" => "fb#about"
+	get "contact" => "fb#contact"
+	get "ig" => "fb#ig"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
