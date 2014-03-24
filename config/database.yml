@@ -17,9 +17,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: menelle-fb_development
+  database: menellefb_development
   pool: 5
-  username: menelle-fb
+  username: Menelle
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -46,15 +46,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: menelle-fb_test
+  database: menellefb_test
   pool: 5
-  username: menelle-fb
-  password:
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  database: menelle-fb_production
-  pool: 5
-  username: menelle-fb
+  username: Menelle
   password:
