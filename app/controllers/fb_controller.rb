@@ -15,7 +15,7 @@ class FbController < ApplicationController
   end
 
   def website
-		redirect_to "http://www.menelle.com/solos"
+		redirect_to website_index_path
   end
 
 	private

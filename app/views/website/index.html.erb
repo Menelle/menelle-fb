@@ -1,2 +1,17 @@
-<h1>Website#index</h1>
-<p>Find me in app/views/website/index.html.erb</p>
+<section id="website" class="container-fluid">
+
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+
+			<script type="text/javascript">
+				window.open("http://www.menelle.com", "_blank");
+			</script>
+
+			<p>the <%= link_to "Menelle Paris", "http://www.menelle.com", target: "_blank" %> website will load in a new page.Please <%= link_to "clic here", "http://www.menelle.com", target: "_blank" %>if it doesn't.</p>
+
+		</div><!-- .col -->
+	</div><!-- .row -->
+
+	<%= render "layouts/footer" %>
+
+</section><!-- #website -->
