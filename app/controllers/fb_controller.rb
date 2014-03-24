@@ -15,7 +15,7 @@ class FbController < ApplicationController
   end
 
   def website
-		redirect_to website_path
+		redirect_to website_index_path
   end
 
 	private
