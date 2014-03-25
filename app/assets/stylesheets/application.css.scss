@@ -13,8 +13,8 @@
 .container-fluid {padding: 0px 15px;}
 h1 {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;font-size:13px!important;color:#000;letter-spacing:2px;text-transform:uppercase;}
 p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;font-size:x-small;color:#000!important;}
+#ig, #about, #contact, #website {margin-left:-15px;padding-bottom:80px;}
 #ig {
-	margin-left:-15px;
 	.ig-header {
 		background-color:#f2f2f2;
 		padding:16px;
@@ -99,7 +99,6 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 	}
 }
 #about {
-	margin-left:-15px;
 	.about-header {
 		height:96px;
 		padding:16px;
@@ -210,7 +209,6 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 	}
 }
 #contact {
-	margin-left:-15px;
 	.contact-header {
 		height:96px;
 		padding:16px;
@@ -229,5 +227,5 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		textarea {width:434px;height:151px;}
 	}
 }
-.footer {position: absolute;bottom:0;height:80px;vertical-align:bottom;}
+.footer {position: absolute;bottom:0;}
 @import "bootstrap";
