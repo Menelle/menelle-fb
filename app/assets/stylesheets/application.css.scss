@@ -220,9 +220,15 @@ p, a {font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;f
 		.contact-logo {width:64px;background-image:asset-url("menelle-contact-logo.png", image);background-size:64px 64px;background-repeat:no-repeat;}
 		.contact-quote {padding-left:16px;padding-top:5px;}
 	}
-	.field {padding-bottom:8px;}
-	.l-align {display:inline-block;float:left;}
-
+	form {
+		font-family: "proxima-nova",sans-serif;font-style:normal;font-weight:400;font-size:small;
+		.field {padding-bottom:8px;}
+		.l-align {display:inline-block;float:left;}
+		.r-align {display:inline-block;padding-left:78px;}
+		.select {padding-left:1px;}
+		select {width:177px;}
+		padding-bottom:80px;
+	}
 }
 .footer {position: absolute;bottom:0;}
 @import "bootstrap";
