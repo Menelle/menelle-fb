@@ -15,11 +15,11 @@
 	<div class="l-align">
 
 		<div class="field">
-			<%= f.text_field :firstname, size:"24", placeholder: "Firstname", autofocus: true %>
+			<%= f.text_field :firstname, placeholder: "Firstname", autofocus: true %>
 		</div>
 
 		<div class="field">
-	    	<%= f.text_field :lastname, size:"24", placeholder: "Lastname" %>
+	    	<%= f.text_field :lastname, placeholder: "Lastname" %>
 		</div>
 		
 		<div class="field select">
@@ -32,11 +32,11 @@
 	<div class="r-align">
 
 		<div class="field">
-	    	<%= f.email_field :email, size:"24", placeholder: "Your Email" %>
+	    	<%= f.email_field :email, placeholder: "Your Email" %>
 		</div>
 
 		<div class="field">
-			<%= f.url_field :url, size:"24", value: "http://", placeholder: "http://www.yoursite.com" %>
+			<%= f.url_field :url, value: "http://", placeholder: "http://www.yoursite.com" %>
 		</div>
 
 		<div class="field select">
@@ -47,7 +47,7 @@
 	</div><!-- .r-align -->
 
 	<div class="field">
-		<%= f.text_area :details, size:"64x8", placeholder: "Type your message here. Do not forget to precise additional details for your search (max. 400 characters)." %>
+		<%= f.text_area :details, placeholder: "Type your message here. Do not forget to precise additional details for your search (max. 400 characters)." %>
 	</div>
 
 
