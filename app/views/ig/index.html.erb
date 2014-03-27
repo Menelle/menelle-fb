@@ -68,7 +68,7 @@
 					<div class="col-md-5 col-sm-5 col-xs-5">
 
 						<div class="caption">
-							<p><%= feed.caption.text %></p>
+							<% if feed.caption? %><p><%= feed.caption.text %></p><% end %>
 						</div><!-- .caption -->
 
 						<div class ="likes">
