@@ -1,0 +1,103 @@
+<section id="ig" class="container-fluid">
+
+	<div class="ig-header">
+
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<div class="profile-picture">
+					<%= image_tag @user.profile_picture %>
+					<%= link_to "http://www.instagram.com/thomasmenelle", target: "_blank" do %>
+						<%= content_tag(:span, nil) %>
+					<% end %>
+					<%= content_tag(:div, nil, class: "link") %>
+				</div><!-- .profile-picture -->
+
+				<div class="id">
+					<div class="fullname">
+						<%= link_to @user.full_name, "http://www.instagram.com/thomasmenelle", target: "_blank" %>
+					</div><!-- .fullname -->
+					<div class="username">
+						<%= link_to "@"+@user.username, "http://www.instagram.com/thomasmenelle", target: "_blank" %>
+					</div><!-- .username -->
+					<div class="website">
+						<%= link_to @user.website, @user.website, target: "_blank" %>
+					</div><!-- .website -->
+				</div><!-- .id -->
+
+				<div class="bio">
+					<p><%= @user.bio %></p>
+				</div><!-- .bio -->
+
+			</div><!-- .col -->
+		</div><!-- .row -->
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+
+				<div class="stats">
+					<%= content_tag(:div, class: "media" ) do %>
+						<%= content_tag(:div, nil, class: "img-media" ) %> <%= content_tag(:div, @user.counts.media, class: "digit-media") %>
+					<% end %>
+					<%= content_tag(:div, class: "followed-by" ) do %>
+						<%= content_tag(:div, nil, class: "img-followed-by" ) %><%= content_tag(:div, @user.counts.followed_by, class: "digit-followed-by") %>
+					<% end %>
+					<%= content_tag(:div, class: "follows" ) do %>
+						<%= content_tag(:div, nil, class: "img-follows" ) %> <%= content_tag(:div, @user.counts.follows, class: "digit-follows") %>
+					<% end %>
+					</div><!-- .stats -->
+
+			</div><!-- .col -->
+		</div><!-- .row -->
+	
+	</div><!-- .ig-header -->
+
+	<div class="items">
+		<% @feed.each do |feed| %>
+			_<div class="item">
+
+				<div class="row">
+					<div class="col-md-7 col-sm-7 col-xs-7">
+
+						<div class="vignette">
+							<%= link_to feed.link, target: "_blank" do %>
+								<%= image_tag feed.images.standard_resolution.url, class: "img-responsive" %>
+							<% end %>
+						</div><!-- .vignette -->
+
+					</div><!-- .col -->
+					<div class="col-md-5 col-sm-5 col-xs-5">
+
+						<div class="caption">
+							<p><%= feed.caption.text %></p>
+						</div><!-- .caption -->
+
+						<div class ="likes">
+							<%= link_to feed.link, target: "_blank" do %>
+								<%= content_tag(:div, nil, class: "img-likes" ) %> <%= content_tag(:div, feed.likes[:count], class: "digit-likes") %>
+							<% end %>
+						</div><!-- .likes -->
+
+						<div class ="comments">
+							<%= link_to feed.link, target: "_blank" do %>
+								<%= content_tag(:div, nil, class: "img-comments" ) %> <%= content_tag(:div, feed.comments[:count], class: "digit-comments") %>
+							<% end %>
+						</div><!-- .comments -->
+
+					</div><!-- .col -->
+				</div><!-- .row -->
+
+			</div><!-- .item -->
+		<% end %>
+	</div><!-- .items -->
+
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+
+			<div class="credits">
+				_<p>Copyright &copy; <%= Time.new.year %> <%= link_to 'Menelle Paris', 'http://www.menelle.com', target: "_blank" %>. All rights reserved.</p>
+			</div><!-- .credits -->
+
+		</div><!-- .col -->
+	</div><!-- .row -->
+
+</section><!-- #ig -->
